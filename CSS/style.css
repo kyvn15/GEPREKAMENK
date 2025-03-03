@@ -8,10 +8,201 @@ html {
 
 /* NAVBAR */
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E52020;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.brand-name {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 420px;
+    margin-top: 10px;
+    gap: 50px;
+    /* Jarak antar menu dikurangi */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.cart,
+.user {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cart img,
+.user img {
+    width: 30px;
+    height: 30px;
+}
+
+.cart-count {
+    background-color: yellow;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+.contact-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: #FBA518;
+    color: white;
+    border-radius: 25px;
+}
+
 
 
 /* landing page */
 
+header {
+    background: #ffe5e5;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text {
+    text-align: left;
+    max-width: 500px;
+}
+
+.header-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.header-text p {
+    font-size: 16px;
+    color: #333;
+}
+
+.order-btn,
+.menu-lainnya {
+    background: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.header-image img {
+    width: 300px;
+}
+
+.menu-favorit {
+    padding: 50px 20px;
+    background: #ffe5e5;
+    text-align: center;
+}
+
+.menu-favorit h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    gap: 100px;
+    width: 900px;
+}
+
+.carousel-container img {
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+.arrow {
+    font-size: 54px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 80%;
+}
+
+.arrow.left {
+    margin-left: -1150px;
+}
+
+.arrow.right {
+    margin-right: -1150px;
+}
 
 
 /* Login */
@@ -49,55 +240,6 @@ html {
     margin-right: 25px;
 }
 
-/* MENU MAKANAN */
-
-.menu-section {
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 60px;
-}
-
-.menu-header h1 {
-    color: #d32f2f;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.menu-category h2 {
-    color: #FFA500;
-    font-size: 28px;
-    margin: 20px 0 10px;
-    border-bottom: 2px solid #FFA500;
-    display: inline-block;
-    font-weight: 900;
-}
-
-.menu-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 15px;
-}
-
-.menu-item img {
-    width: 100px;
-    height: 100px;
-    margin-right: 15px;
-    border-radius: 8px;
-}
-
-.menu-details h3 {
-    font-size: 20px;
-    margin: 0 0 5px;
-    color: #FFA500;
-    font-weight: 700;
-}
-
-.menu-details p {
-    font-size: 14px;
-    margin: 0;
-}
-
 /* MENU */
 
 
@@ -108,4 +250,119 @@ html {
 
 /* FOOTER */
 
-/* Footer Styles */
+.footer {
+    background-color: #E52020;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Pastikan elemen sejajar atas */
+    padding: 10px 40px;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    /* Semua bagian punya lebar yang sama */
+    text-align: left;
+    /* Biar teks tetap rata kiri */
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 3px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section p {
+    margin: 3px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Biar agak renggang */
+    align-items: center; /* Biar sejajar */
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.circle {
+    width: 35px; /* Diperbesar biar gambar nggak kepotong */
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Biar gambar nggak keluar dari lingkaran */
+}
+
+.circle img {
+    width: 70%; /* Supaya gambarnya proporsional */
+    height: auto;
+}
+
+
+.address-box {
+    width: 300px;
+    /* Lebarkan biar iframe pas */
+    height: 100px;
+    /* Tinggi lebih besar */
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* Biar ada jarak dalam */
+}
+
+.address-box iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.footer-section h3 {
+    text-align: left;
+    /* Biar sejajar ke kiri */
+    margin-bottom: 10px;
+    /* Jarak biar gak nempel */
+}
+
+
+.footer-line {
+    border: none;
+    height: 1px;
+    background-color: black;
+    width: 90%;
+    margin: 5px auto;
+}
+
+.footer-credit {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
