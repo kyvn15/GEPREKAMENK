@@ -108,7 +108,7 @@ html {
 /* landing page */
 
 header {
-    background: #ffe5e5;
+    background: #ffffff;
     padding: 50px 20px;
     display: flex;
     align-items: center;
@@ -118,7 +118,7 @@ header {
 .header-content {
     display: flex;
     max-width: 1100px;
-    width: 100%;
+    width: 70%;
     justify-content: space-between;
     align-items: center;
 }
@@ -141,7 +141,7 @@ header {
 .order-btn,
 .menu-lainnya {
     background: #ff9900;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 5px;
@@ -156,7 +156,7 @@ header {
 
 .menu-favorit {
     padding: 50px 20px;
-    background: #ffe5e5;
+    background: #ffffff;
     text-align: center;
 }
 
@@ -207,11 +207,286 @@ header {
 
 /* Login */
 
+.login-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 37%;
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-top: -20px;
+    font-weight: 100;
+}
+
+.log {
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+.nohp {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    /* Jarak antar input diperbesar */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efek fokus saat input diklik */
+input:focus {
+    border-color: #f75e5e;
+    box-shadow: 0 0 8px rgba(247, 94, 94, 0.5);
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #f75e5e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Efek hover dan animasi klik */
+.login-btn:hover {
+    background-color: #ff4a4a;
+}
+
+.login-btn:active {
+    transform: scale(0.95);
+    /* Efek mengecil saat diklik */
+}
+
+.extra-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.extra-options a,
+.register-text a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Hover ubah warna jadi #FBA518 */
+.extra-options a:hover,
+.register-text a:hover {
+    color: #FBA518;
+    text-decoration: none;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    font-size: 12px;
+    color: #666;
+    width: 100%;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.facebook-btn,
+.google-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efek klik pada tombol login via sosial media */
+.facebook-btn:active,
+.google-btn:active {
+    transform: scale(1.1);
+}
+
+.facebook-btn img,
+.google-btn img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.register-text {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
 
 
 /* sign up */
 
+.login-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 37%;
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
+h2 {
+    margin-top: -20px;
+    font-weight: 100;
+}
+
+.log {
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+.nohp {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    /* Jarak antar input diperbesar */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efek fokus saat input diklik */
+input:focus {
+    border-color: #f75e5e;
+    box-shadow: 0 0 8px rgba(247, 94, 94, 0.5);
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #f75e5e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Efek hover dan animasi klik */
+.login-btn:hover {
+    background-color: #ff4a4a;
+}
+
+.login-btn:active {
+    transform: scale(0.95);
+    /* Efek mengecil saat diklik */
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    font-size: 12px;
+    color: #666;
+    width: 100%;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.facebook-btn,
+.google-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efek klik pada tombol login via sosial media */
+.facebook-btn:active,
+.google-btn:active {
+    transform: scale(1.1);
+}
+
+.facebook-btn img,
+.google-btn img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.register-text {
+    font-size: 14px;
+    margin-top: 15px;
+}
 
 /* ABOUT US */
 
@@ -241,11 +516,201 @@ header {
 }
 
 /* MENU */
+.judul {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 800;
+}
 
+/* Category Button Styling */
+.category {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.category button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.category button:hover {
+    background-color: #e65c00;
+}
+
+/* Menu Layout */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.menu-column {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-column.left {
+    border-right: 2px solid black;
+    /* Line pembatas tengah */
+    padding-right: 20px;
+}
+
+.menu-column.right {
+    padding-left: 20px;
+}
+
+/* Menu Card */
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.menu-card h3 {
+    margin: 10px 0 5px;
+}
+
+.menu-card p {
+    margin: 5px 0;
+}
+
+/* Add Button */
+.add-btn {
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background-color: darkorange;
+}
 
 
 /* CONTACT */
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* Tambahin jarak ke bawah */
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 150px;
+    /* Lebarin garis */
+    height: 3px;
+    background-color: orange;
+    margin: 8px auto;
+}
+
+.form-container {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    /* Lebarin form */
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-container {
+    text-align: center;
+    display: flex;
+    gap: 50px;
+}
+
+.contact-container a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-circle:hover {
+    transform: scale(1.1);
+    /* Efek zoom saat hover */
+}
 
 
 /* FOOTER */
@@ -255,6 +720,14 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
+}
+
+.footer2 {
+    background-color: #E52020;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .footer-container {
@@ -300,8 +773,10 @@ header {
 
 .social-icons {
     display: flex;
-    gap: 10px; /* Biar agak renggang */
-    align-items: center; /* Biar sejajar */
+    gap: 10px;
+    /* Biar agak renggang */
+    align-items: center;
+    /* Biar sejajar */
 }
 
 .social-icons a {
@@ -309,18 +784,21 @@ header {
 }
 
 .circle {
-    width: 35px; /* Diperbesar biar gambar nggak kepotong */
+    width: 35px;
+    /* Diperbesar biar gambar nggak kepotong */
     height: 35px;
     background-color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Biar gambar nggak keluar dari lingkaran */
+    overflow: hidden;
+    /* Biar gambar nggak keluar dari lingkaran */
 }
 
 .circle img {
-    width: 70%; /* Supaya gambarnya proporsional */
+    width: 70%;
+    /* Supaya gambarnya proporsional */
     height: auto;
 }
 

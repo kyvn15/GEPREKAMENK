@@ -42,39 +42,33 @@
         </div>
     </nav>
 
-    <div class="title">REPORT & CONTACT</div>
+    <!--  CONTENT  -->
 
-    <div class="container">
-        <!-- Form Laporan -->
-        <div class="form-container">
-            <form id="reportForm">
-                <input type="text" id="name" placeholder="Name" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <textarea id="message" placeholder="Message" required></textarea>
-                <button type="submit">SEND</button>
-            </form>
+    <div class="login-container">
+        <h2 class="log">Sign Up?</h2>
+        <input class="nohp" type="text" placeholder="No handphone / Email">
+        <input type="password" placeholder="Password">
+        <button class="login-btn">LOG IN</button>
+
+        <div class="divider">
+            <span></span> ATAU <span></span>
         </div>
 
-        <div class="or">OR</div>
-
-        <!-- Contact Seller -->
-        <div class="contact-container">
-            <div>
-                <div class="contact-circle">
-                    <img src="/ASSETS/aku.jpeg" Seller">
-                </div>
-                <a href="https://wa.me/6285964209143" target="_blank">Contact Us</a>
-            </div>
-            <div>
-                <div class="contact-circle">
-                    <img src="ASSETS/aku.jpeg" alt="Seller">
-                </div>
-                <a href="https://wa.me/6285964209143" target="_blank">Contact Us</a>
-            </div>
+        <div class="social-login">
+            <button class="facebook-btn">
+                <img src="/ASSETS/fb.png" alt="Facebook"> Facebook
+            </button>
+            <button class="google-btn">
+                <img src="/ASSETS/google.png" alt="Google"> Google
+            </button>
         </div>
+
+        <p class="register-text">
+            Sudah Punya Akun Amenk ? <a href="login.html">Log In</a>
+        </p>
     </div>
 
-    <footer class="footer2">
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Main Menu</h3>
@@ -126,37 +120,6 @@
         <hr class="footer-line">
         <p class="footer-credit">Design By VanoJulio</p>
     </footer>
-
-
-    <script>
-        document.getElementById("reportForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let message = document.getElementById("message").value;
-
-            let url = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
-            let formData = new FormData();
-            formData.append("Name", name);
-            formData.append("Email", email);
-            formData.append("Message", message);
-
-            fetch(url, {
-                method: "POST",
-                body: formData
-            })
-                .then(response => response.text())
-                .then(data => {
-                    alert("Laporan terkirim!");
-                    document.getElementById("reportForm").reset();
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                    alert("Gagal mengirim laporan.");
-                });
-        });
-    </script>
 </body>
 
 </html>

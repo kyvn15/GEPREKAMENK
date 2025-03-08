@@ -19,37 +19,26 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Geprek Amenk</a>
-            <!-- Hamburger menu untuk layar kecil -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Menu
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="makanan.html">MAKANAN</a></li>
-                            <li><a class="dropdown-item" href="minuman.html">MINUMAN</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+   
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="/ASSETS/trash-can.png" alt="Logo Rumah Amenk" class="logo">
+            <span class="brand-name">Rumah Amenk</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="landingpage.html">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="icons">
+            <a href="cart.html" class="cart">
+                <img src="/ASSETS/shopping-bag.png" alt="Cart">
+                <span class="cart-count">8</span>
+            </a>
+            <a href="login.html" class="user">
+                <img src="/ASSETS/user.png" alt="User">
+            </a>
+            <a href="contact.html" class="contact-btn">CONTACT</a> <!-- Sekarang pakai <a> biar bisa klik -->
         </div>
     </nav>
 
@@ -73,47 +62,54 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-column">
+            <div class="footer-section">
                 <h3>Main Menu</h3>
                 <ul>
-                    <a href="index.html">Home</a>
-                    <a href="makanan.html">Menu</a>
-                    <a href="about.html">About Us</a>
+                    <li><a href="landingpage.html">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
+
+            <div class="footer-section">
                 <h3>Contact Us</h3>
                 <p>contohgmail15@gmail.com</p>
                 <p>+62 852-3182-3088</p>
             </div>
-            <div class="footer-column">
+
+            <div class="footer-section">
                 <h3>Sosmed Amenk</h3>
-                <div class="footer-sosmed">
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i>
-                        <img src="/ASSETS/fb.png">
+                <div class="social-icons">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="/ASSETS/fb.png">
+                        </div>
                     </a>
-                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i>
-                        <img src="/ASSETS/wa.png">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="/ASSETS/ig.png">
+                        </div>
                     </a>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i>
-                        <img src="/ASSETS/ig.png">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="/ASSETS/wa.png">
+                        </div>
                     </a>
-                </div>
+                </div>                
             </div>
-            <div class="footer-columnn">
-                <h3>Adress</h3>
+
+            <div class="footer-section">
+                <h3>Address</h3>
                 <div class="address-box">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63185.60224560849!2d114.3760194!3d-8.1926668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd145cfd7b82b3b%3A0x443e83f6f4e9cc3e!2sAMENK%20SALAD!5e0!3m2!1sid!2sid!4v1734929409439!5m2!1sid!2sid"
-                        width="300" height="150" style="border-radius:10px;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.0986796408683!2d114.37595739999999!3d-8.192814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd145cfd7b82b3b%3A0x443e83f6f4e9cc3e!2sAMENK%20SALAD!5e0!3m2!1sid!2sid!4v1740978435400!5m2!1sid!2sid" 
+                    width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
+            </div>            
         </div>
-        <hr class="separator">
+
+        <hr class="footer-line">
         <p class="footer-credit">Design By VanoJulio</p>
     </footer>
-
 </body>
 
 </html>
