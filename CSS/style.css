@@ -516,7 +516,7 @@ input:focus {
 }
 
 /* MENU */
-.judul {
+judul {
     margin-top: 30px;
     text-align: center;
     font-weight: 800;
@@ -530,7 +530,7 @@ input:focus {
     margin: 20px 0;
 }
 
-.category button {
+.category a {
     background-color: #ff6600;
     color: white;
     border: none;
@@ -539,10 +539,12 @@ input:focus {
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
-.category button:hover {
+.category a:hover {
     background-color: #e65c00;
+    color: white;
 }
 
 /* Menu Layout */

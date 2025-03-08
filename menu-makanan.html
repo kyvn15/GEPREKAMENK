@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Makanan</title>
     <meta name="description"
         content="Geprek Amenk - Nikmati ayam geprek terbaik dengan berbagai pilihan menu. Segera pesan sekarang!">
-    <title>GEPREK AMENK</title>
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -19,84 +19,57 @@
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="id">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Menu Makanan</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-
-        <nav class="navbar">
-            <div class="logo-container">
-                <img src="/ASSETS/trash-can.png" alt="Logo Rumah Amenk" class="logo">
-                <span class="brand-name">Rumah Amenk</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-            </ul>
-            <div class="icons">
-                <a href="cart.html" class="cart">
-                    <img src="/ASSETS/shopping-bag.png" alt="Cart">
-                    <span class="cart-count">8</span>
-                </a>
-                <a href="login.html" class="user">
-                    <img src="/ASSETS/user.png" alt="User">
-                </a>
-                <a href="contact.html" class="contact-btn">CONTACT</a> <!-- Sekarang pakai <a> biar bisa klik -->
-            </div>
-        </nav>
-
-        <h1 class="judul">Menu</h1>
-        <div class="category">
-            <button onclick="showMenu('makanan')">MAKANAN</button>
-            <button onclick="showMenu('snack')">SNACKS</button>
-            <button onclick="showMenu('minuman')">MINUMAN</button>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="/ASSETS/trash-can.png" alt="Logo Rumah Amenk" class="logo">
+            <span class="brand-name">Rumah Amenk</span>
         </div>
-        
-        <div class="menu-container">
-            <div class="menu-column left">
-                <div class="menu-card makanan">
-                    <img src="/ASSETS/ayam-geprek-indonesian-food-crispy-260nw-2357183251-removebg-preview.png" alt="Ayam Geprek">
-                    <h3>Ayam Geprek</h3>
-                    <p>Ayam Geprek Ya Ayam Yang Di Geprek Gais</p>
-                    <p>RP 12.000</p>
-                    <button class="add-btn">Add</button>
-                </div>
-                
-                <div class="menu-card makanan">
-                    <img src="/ASSETS/ayam-geprek-indonesian-food-crispy-260nw-2357183251-removebg-preview.png" alt="Ayam Geprek">
-                    <h3>Ayam Geprek</h3>
-                    <p>Ayam Geprek Ya Ayam Yang Di Geprek Gais</p>
-                    <p>RP 12.000</p>
-                    <button class="add-btn">Add</button>
-                </div>
+        <ul class="nav-links">
+            <li><a href="landingpage.html">HOME</a></li>
+            <li><a href="menu-makanan.html">MENU</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+        <div class="icons">
+            <a href="cart.html" class="cart">
+                <img src="/ASSETS/shopping-bag.png" alt="Cart">
+                <span class="cart-count">8</span>
+            </a>
+            <a href="login.html" class="user">
+                <img src="/ASSETS/user.png" alt="User">
+            </a>
+            <a href="contact.html" class="contact-btn">CONTACT</a> <!-- Sekarang pakai <a> biar bisa klik -->
+        </div>
+    </nav>
+
+    <h1 class="judul">Menu</h1>
+    <div class="category">
+        <a href="menu-makanan.html">MAKANAN</a>
+        <a href="menu-snack.html">SNACKS</a>
+        <a href="menu-minuman.html">MINUMAN</a>
+    </div>
+
+    <div class="menu-container">
+        <div class="menu-column left">
+            <div class="menu-card makanan">
+                <img src="/ASSETS/ayam-geprek-indonesian-food-crispy-260nw-2357183251-removebg-preview.png"
+                    alt="Ayam Geprek">
+                <h3>Ayam Geprek</h3>
+                <p>Ayam Geprek Ya Ayam Yang Di Geprek Gais</p>
+                <p>RP 12.000</p>
+                <button class="add-btn">Add</button>
             </div>
-        
+
             <div class="menu-column right">
-                <div class="menu-card minuman">
-                    <img src="/ASSETS/es-teh.png" alt="Es Teh">
-                    <h3>Es Teh</h3>
-                    <p>Teh Dingin Segar</p>
-                    <p>RP 5.000</p>
-                    <button class="add-btn">Add</button>
-                </div>
-        
-                <div class="menu-card snack">
-                    <img src="/ASSETS/kentang-goreng.png" alt="Kentang Goreng">
-                    <h3>Kentang Goreng</h3>
-                    <p>Kentang Renyah Gurih</p>
-                    <p>RP 10.000</p>
+                <div class="menu-card makanan">
+                    <img src="/ASSETS/ayam-geprek-indonesian-food-crispy-260nw-2357183251-removebg-preview.png"
+                        alt="Ayam Geprek">
+                    <h3>Ayam Geprek</h3>
+                    <p>Ayam Geprek Ya Ayam Yang Di Geprek Gais</p>
+                    <p>RP 12.000</p>
                     <button class="add-btn">Add</button>
                 </div>
             </div>
-        </div>        
+        </div>
 
         <footer class="footer">
             <div class="footer-container">
@@ -150,21 +123,6 @@
             <hr class="footer-line">
             <p class="footer-credit">Design By VanoJulio</p>
         </footer>
+</body>
 
-        <script>
-            function showMenu(category) {
-                document.querySelectorAll('.menu-item.makanan');
-
-                const items = document.querySelectorAll('.menu-card');
-                items.forEach(item => {
-                    if (item.classList.contains(category)) {
-                        item.style.display = 'flex';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            }
-        </script>
-    </body>
-
-    </html>
+</html>
