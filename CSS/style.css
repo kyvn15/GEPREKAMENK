@@ -1,4 +1,8 @@
 /* BODY */
+/* 
+* {
+    border: green 1px solid;
+} */
 
 body,
 html {
@@ -10,16 +14,18 @@ html {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background-color: #E52020;
+    justify-content: space-between;
+    background-color: #FF6347;
     padding: 10px 20px;
+    position: relative;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
     gap: 10px;
+    z-index: 2;
 }
 
 .logo {
@@ -33,13 +39,16 @@ html {
     font-weight: bold;
 }
 
+/* Nav-links ditengah pakai absolute + transform */
 .nav-links {
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
     list-style: none;
     display: flex;
-    margin-left: 420px;
-    margin-top: 10px;
-    gap: 50px;
-    /* Jarak antar menu dikurangi */
+    gap: 20px;
+    z-index: 1;
 }
 
 .nav-links li {
@@ -53,15 +62,41 @@ html {
     transition: color 0.3s;
 }
 
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Garis animasi bawah */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Saat hover garis muncul */
+.nav-links a:hover::after {
+    width: 100%;
+}
+
 .nav-links a:hover {
-    color: yellow;
+    color: #FBA518;
+
 }
 
 .icons {
     display: flex;
     align-items: center;
     gap: 30px;
-    margin-right: 20px;
+    z-index: 2;
 }
 
 .cart,
@@ -71,20 +106,30 @@ html {
     text-decoration: none;
 }
 
-.cart img,
-.user img {
-    width: 30px;
-    height: 30px;
+.cart i,
+.user i {
+    font-size: 30px;
+    color: white;
+}
+
+.cart i {
+    font-size: 23px;
 }
 
 .cart-count {
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     color: black;
     font-size: 12px;
     font-weight: bold;
-    padding: 2px 5px;
+    /* width: 15px;
+    height: 15px; */
+    border: #FF6347 2px solid;
+    padding: 0px 5px;
+    color: #f75e5e;
+    /* padding: 2px 2px; */
     border-radius: 50%;
-    margin-left: -10px;
+    margin-left: -6px;
+    margin-top: -10px;
 }
 
 .contact-btn {
@@ -136,6 +181,11 @@ header {
 .header-text p {
     font-size: 16px;
     color: #333;
+}
+
+.order-btn:hover {
+  color:    #000000;
+  text-decoration: none;
 }
 
 .order-btn,
@@ -516,7 +566,7 @@ input:focus {
 }
 
 /* MENU */
-judul {
+.judul {
     margin-top: 30px;
     text-align: center;
     font-weight: 800;
@@ -563,12 +613,6 @@ judul {
     gap: 20px;
 }
 
-.menu-column.left {
-    border-right: 2px solid black;
-    /* Line pembatas tengah */
-    padding-right: 20px;
-}
-
 .menu-column.right {
     padding-left: 20px;
 }
@@ -585,6 +629,7 @@ judul {
     background-color: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
+    height: 310px;
 }
 
 .menu-card:hover {
@@ -654,7 +699,7 @@ judul {
     background-color: orange;
     padding: 20px;
     border-radius: 10px;
-    width: 350px;
+    width: 550px;
     /* Lebarin form */
 }
 
