@@ -2,144 +2,362 @@
 <html lang="id">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Makanan</title>
-    <meta name="description"
-        content="Geprek Amenk - Nikmati ayam geprek terbaik dengan berbagai pilihan menu. Segera pesan sekarang!">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Makanan</title>
+  <meta name="description"
+    content="Geprek Amenk - Nikmati ayam geprek terbaik dengan berbagai pilihan menu. Segera pesan sekarang!">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo-container">
-            <img src="/ASSETS/logo.png" alt="Logo Rumah Amenk" class="logo">
-            <span class="brand-name">Geprek Amenk</span>
+
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="/ASSETS/logo.png" alt="Logo Rumah Amenk" class="logo">
+      <span class="brand-name">Geprek Amenk</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="landingpage.html">Home</a></li>
+      <li><a href="menu-makanan.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="icons">
+      <a href="cart.html" class="cart">
+        <i class="bi bi-bag-fill"></i>
+        <span class="cart-count">8</span>
+      </a>
+      <a href="login.html" class="user">
+        <i class="bi bi-person-fill"></i>
+      </a>
+    </div>
+  </nav>
+
+  <h1 class="judul">Menu</h1>
+  <div class="category">
+    <a href="menu-makanan.html">MAKANAN</a>
+    <a href="menu-snack.html">MENU LAINNYA</a>
+    <a href="menu-minuman.html">MINUMAN</a>
+  </div>
+
+  <div class="menu-container">
+    <div class="menu-column left">
+      <div class="menu-card makanan" data-bs-toggle="modal" data-bs-target="#geprekmerahModal">
+        <img src="/ASSETS/geprek2.png">
+        <h3>Ayam Geprek</h3>
+        <p>Ayam Geprek Sambel Merah Pedes Nya Bikin Nampol</p>
+        <p>RP 12.000</p>
+        <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
+      </div>
+      <div class="menu-card makanan" data-bs-toggle="modal" data-bs-target="#telurhijauModal">
+        <img src="/ASSETS/telurijo.png">
+        <h3>Telur Geprek Ijo</h3>
+        <p>Telur Geprek Ijo Pedes Nya Bikin Nampol</p>
+        <p>RP 13.000</p>
+        <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
+      </div>
+    </div>
+
+    <div class="menu-column center">
+      <div class="menu-card makanan" data-bs-toggle="modal" data-bs-target="#geprekijoModal">
+        <img src="/ASSETS/geprek3.png">
+        <h3>Ayam Geprek Ijo</h3>
+        <p>Ayam Geprek Sambel Ijo Seger Pedesnya Bikin Melek!</p>
+        <p>RP 12.000</p>
+        <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
+      </div>
+      <div class="menu-card makanan" data-bs-toggle="modal" data-bs-target="#nasgorModal">
+        <img src="/ASSETS/nasgor.png">
+        <h3>Nasi Goreng</h3>
+        <p>Nasi Goreng Di Jamin Bikin Perut Kenyang</p>
+        <p>RP 15.000</p>
+        <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
+      </div>
+      <div class="menu-card makanan" data-bs-toggle="modal" data-bs-target="#mawutModal">
+        <img src="/ASSETS/mawut.jpg">
+        <h3>Nasi Goreng Mawut</h3>
+        <p>Nasi Goreng Di Jamin Bikin Perut Kenyang Apalagi Di Campur Mie Apa Ga Kenyang Tuh</p>
+        <p>RP 14.000</p>
+        <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
+      </div>
+    </div>
+
+    <div class="menu-column right">
+      <div class="menu-card makanan" data-bs-toggle="modal" data-bs-target="#telurmerahModal">
+        <img src="/ASSETS/telurabang.png" alt="Es Jeruk">
+        <h3>Telur Geprek Merah</h3>
+        <p>Telur Geprek Abang Nampol Bingitttss</p>
+        <p>RP 13.000</p>
+        <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
+      </div>
+      <div class="menu-card makanan" data-bs-toggle="modal" data-bs-target="#mieModal">
+        <img src="/ASSETS/mie.png" alt="Es Jeruk">
+        <h3>Mie Goreng</h3>
+        <p>Mie Goreng Dengan Banyak Topping Meriah</p>
+        <p>RP 15.000</p>
+        <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal for Left -->
+
+  <div class="modal fade" id="geprekmerahModal" tabindex="-1" aria-labelledby="geprekmerahModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="geprekmerahModalLabel">Ayam Geprek</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <ul class="nav-links">
-            <li><a href="landingpage.html">Home</a></li>
-            <li><a href="menu-makanan.html">Menu</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <!-- <li><a href="contact.html" class="contact-btn">CONTACT</a></li> Sekarang pakai <a> biar bisa klik -->
+        <div class="modal-body">
+          <img src="/ASSETS/geprek2.png" class="img-fluid">
+          <h5>Ayam Geprek</h5>
+          <p>Siap-siap ketagihan! Ayam goreng crispy digeprek sempurna, disiram sambal merah racikan spesial. Gurih dan
+            pedasnya nendang, bikin tiap gigitan susah dilupain!
+          </p>
+          <p>Harga: RP 12.000</p>
+          <div class="quantity-controls">
+            <button>-</button>
+            <input type="text" value="1" readonly>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="telurhijauModal" tabindex="-1" aria-labelledby="telurhjauModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="telurhijauModalLabel">Telur Geprek Ijo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/ASSETS/telurijo.png" class="img-fluid">
+          <h5>Telur Geprek Ijo</h5>
+          <p>Penggemar sambal hijau, merapat! Telur goreng kriuk digeprek hangat-hangat, dipadu sambal hijau segar yang
+            aromanya menggoda, rasanya gurih, pedas, dan pas banget di lidah. Sekali suap, dijamin langsung jatuh cinta
+            sama nikmatnya!
+          </p>
+          <p>Harga: RP 13.000</p>
+          <div class="quantity-controls">
+            <button>-</button>
+            <input type="text" value="1" readonly>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal For Center-->
+
+  <div class="modal fade" id="geprekijoModal" tabindex="-1" aria-labelledby="geprekijoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="geprekijoModalLabel">Ayam Geprek Ijo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/ASSETS/geprek3.png" class="img-fluid">
+          <h5>Ayam Geprek Ijo</h5>
+          <p>Buat kamu pecinta sambal hijau, ini dia juaranya! Ayam goreng renyah digeprek panas-panas, dipadu sambal
+            hijau segar yang wangi, gurih, dan pedasnya nendang. Rasanya pas banget di lidah, sekali coba pasti
+            ketagihan!</p>
+          <p>Harga: RP 12.000</p>
+          <div class="quantity-controls">
+            <button>-</button>
+            <input type="text" value="1" readonly>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="nasgorModal" tabindex="-1" aria-labelledby="nasgorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="nasgorModalLabel">Nasi Goreng</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/ASSETS/nasgor.png" class="img-fluid">
+          <h5>Nasi Goreng</h5>
+          <p>Buat yang doyan rasa gurih dan nikmat, nasi goreng spesial ini wajib dicoba! Nasi hangat dimasak dengan
+            bumbu pilihan, wangi, gurih, dan sedikit pedas, lengkap dengan topping yang menggoda. Setiap suapan penuh
+            rasa, bikin susah berhenti!</p>
+          <p>Harga: RP 15.000</p>
+          <div class="quantity-controls">
+            <button>-</button>
+            <input type="text" value="1" readonly>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="mawutModal" tabindex="-1" aria-labelledby="mawutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mawutModalLabel">Nasi Goreng Mawut</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/ASSETS/mawut.png" class="img-fluid">
+          <h5>Nasi Goreng Mawut</h5>
+          <p>Nasi goreng mawut, cocok buat yang suka sensasi makan yang penuh rasa! Nasi yang dicampur dengan mie,
+            dipadu bumbu gurih, pedas, dan sedikit manis, bikin setiap suapan nggak bisa berhenti. Ditambah dengan
+            topping pilihan yang makin nambah nikmat. Sekali coba, pasti ketagihan!</p>
+          <p>Harga: RP 14.000</p>
+          <div class="quantity-controls">
+            <button>-</button>
+            <input type="text" value="1" readonly>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal For Right -->
+
+  <div class="modal fade" id="telurmerahModal" tabindex="-1" aria-labelledby="telurmerahModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="telurmerahModalLabel">Telur Geprek Merah</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/ASSETS/telurabang.png" alt="telur merah" class="img-fluid">
+          <h5>Telur Geprek Merah</h5>
+          <p>Buat kamu pencinta pedas, wajib coba yang satu ini! Telur goreng crispy digeprek panas-panas, disiram
+            sambal merah pedas yang gurih, wangi, dan bikin nagih. Kombinasi renyah telur dan sambal merah yang nendang
+            ini siap bikin kamu nggak bisa berhenti makan!</p>
+          <p>Harga: RP 13.000</p>
+          <div class="quantity-controls">
+            <button>-</button>
+            <input type="text" value="1" readonly>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="mieModal" tabindex="-1" aria-labelledby="mieModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mieModalLabel">Mie Goreng</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="/ASSETS/mie.png" alt="mie" class="img-fluid">
+          <h5>Mie Goreng</h5>
+          <p>Suka mie? Ini dia juaranya! Mie goreng spesial dengan tekstur kenyal, bumbu gurih yang meresap, pedas pas,
+            dan aroma wangi yang bikin nagih. Cocok banget buat yang pengen makan enak tanpa ribet!</p>
+          <p>Harga: RP 15.000</p>
+          <div class="quantity-controls">
+            <button>-</button>
+            <input type="text" value="1" readonly>
+            <button>+</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Main Menu</h3>
+        <ul>
+          <li><a href="landingpage.html">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
         </ul>
-        <div class="icons">
-            <a href="cart.html" class="cart">
-                <i class="bi bi-bag-fill"></i>
-                <!-- <img src="/ASSETS/shopping-bag.png" alt="Cart"> -->
-                <span class="cart-count">8</span>
-            </a>
-            <a href="login.html" class="user">
-                <i class="bi bi-person-fill"></i>
-                <!-- <img src="/ASSETS/user.png" alt="User"> -->
-            </a>
-        </div>
-    </nav>
+      </div>
 
-    <h1 class="judul">Menu</h1>
-    <div class="category">
-        <a href="menu-makanan.html">MAKANAN</a>
-        <a href="menu-snack.html">MENU LAINNYA</a>
-        <a href="menu-minuman.html">MINUMAN</a>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>contohgmail15@gmail.com</p>
+        <p>+62 852-3182-3088</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Sosmed Amenk</h3>
+        <div class="social-icons">
+          <a href="#">
+            <div class="circle"><img src="/ASSETS/fb.png"></div>
+          </a>
+          <a href="#">
+            <div class="circle"><img src="/ASSETS/ig.png"></div>
+          </a>
+          <a href="#">
+            <div class="circle"><img src="/ASSETS/wa.png"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Address</h3>
+        <div class="address-box">
+          <iframe src="https://www.google.com/maps/embed?pb=..." width="300" height="100" style="border:0;"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
     </div>
 
-    <div class="menu-container">
-        <div class="menu-column ">
-            <div class="menu-card makanan">
-                <img src="/ASSETS/ayam-geprek-indonesian-food-crispy-260nw-2357183251-removebg-preview.png"
-                    alt="Ayam Geprek">
-                <h3>Ayam Geprek</h3>
-                <p>Ayam Geprek Ya Ayam Yang Di Geprek Gais</p>
-                <p>RP 12.000</p>
-                <button class="add-btn">Add</button>
-            </div>
-        </div>
+    <hr class="footer-line">
+    <p class="footer-credit">Design By VanoJulio</p>
+  </footer>
 
-        <div class="menu-column center ">
-            <div class="menu-card makanan">
-                <img src="/ASSETS/ayam-geprek-indonesian-food-crispy-260nw-2357183251-removebg-preview.png"
-                    alt="Ayam Geprek">
-                <h3>Ayam Geprek</h3>
-                <p>Ayam Geprek Ya Ayam Yang Di Geprek Gais</p>
-                <p>RP 12.000</p>
-                <button class="add-btn">Add</button>
-            </div>
-        </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 
-
-        <div class="menu-column right">
-            <div class="menu-card makanan">
-                <img src="/ASSETS/geprek2.png"
-                    alt="Ayam Geprek">
-                <h3>Ayam Geprek</h3>
-                <p>Ayam Geprek Ya Ayam Yang Di Geprek Gais</p>
-                <p>RP 12.000</p>
-                <button class="add-btn">Add</button>
-            </div>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Main Menu</h3>
-                <ul>
-                    <li><a href="landingpage.html">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>contohgmail15@gmail.com</p>
-                <p>+62 852-3182-3088</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Sosmed Amenk</h3>
-                <div class="social-icons">
-                    <a href="#">
-                        <div class="circle">
-                            <img src="/ASSETS/fb.png">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="circle">
-                            <img src="/ASSETS/ig.png">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="circle">
-                            <img src="/ASSETS/wa.png">
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer-section">
-                <h3>Address</h3>
-                <div class="address-box">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.0986796408683!2d114.37595739999999!3d-8.192814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd145cfd7b82b3b%3A0x443e83f6f4e9cc3e!2sAMENK%20SALAD!5e0!3m2!1sid!2sid!4v1740978435400!5m2!1sid!2sid"
-                        width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-
-        <hr class="footer-line">
-        <p class="footer-credit">Design By VanoJulio</p>
-    </footer>
 </body>
 
 </html>
