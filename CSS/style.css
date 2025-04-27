@@ -674,6 +674,15 @@ input:focus {
     margin-top: 5px;
 }
 
+.harga {
+  font-weight: 600;
+}
+
+.modal-body img {
+    height: 220px;
+    width: 220px;
+}
+
 .quantity-controls {
     display: flex;
     justify-content: center;
