@@ -60,7 +60,7 @@
         </div>
     </div>
 
-    <footer class="footer2">
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Main Menu</h3>
@@ -112,37 +112,6 @@
         <hr class="footer-line">
         <p class="footer-credit">Design By VanoJulio</p>
     </footer>
-
-
-    <script>
-        document.getElementById("reportForm").addEventListener("submit", function (event) {
-            event.preventDefault();
-
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let message = document.getElementById("message").value;
-
-            let url = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec";
-            let formData = new FormData();
-            formData.append("Name", name);
-            formData.append("Email", email);
-            formData.append("Message", message);
-
-            fetch(url, {
-                method: "POST",
-                body: formData
-            })
-                .then(response => response.text())
-                .then(data => {
-                    alert("Laporan terkirim!");
-                    document.getElementById("reportForm").reset();
-                })
-                .catch(error => {
-                    console.error("Error:", error);
-                    alert("Gagal mengirim laporan.");
-                });
-        });
-    </script>
 </body>
 
 </html>

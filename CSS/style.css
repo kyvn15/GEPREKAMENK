@@ -840,18 +840,10 @@ input:focus {
 /* FOOTER */
 
 .footer {
-    background-color: #E52020;
+    background-color: #ff3a17;
     color: white;
     padding: 10px 0;
     text-align: center;
-}
-
-.footer2 {
-    background-color: #E52020;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    margin-top: 40px;
 }
 
 .footer-container {

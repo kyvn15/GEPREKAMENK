@@ -54,22 +54,116 @@
 
     <div class="menu-container">
         <div class="menu-column left">
-            <div class="menu-card snack">
-                <img src="/ASSETS/salad.jpg" alt="Kentang Goreng">
-                <h3>Salad</h3>
-                <p>Salad seger isi buah</p>
-                <p>RP 12.000</p>
-                <button class="add-btn">Add</button>
+            <div class="menu-card minuman" data-bs-toggle="modal" data-bs-target="#saladModal">
+                <img src="/ASSETS/salad.jpg" alt="salad">
+                <h3>Salad Buah</h3>
+                <p>Salad Buah Segar</p>
+                <p>RP 8.000</p>
+                <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
+            </div>
+        </div>
+
+        <div class="menu-column center">
+            <div class="menu-card minuman" data-bs-toggle="modal" data-bs-target="#gorenganModal">
+                <img src="/ASSETS/gorengan.png" alt="gorengan">
+                <h3>Gorengan</h3>
+                <p>Aneka Gorengan Yang Sangat NIkmat</p>
+                <p>RP 1.000</p>
+                <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
             </div>
         </div>
 
         <div class="menu-column right">
-            <div class="menu-card snack">
-                <img src="/ASSETS/gorengan.png" alt="Kentang Goreng">
-                <h3>Gorengan</h3>
-                <p>Gorengan Renyah</p>
-                <p>RP 2.000</p>
-                <button class="add-btn">Add</button>
+            <div class="menu-card minuman" data-bs-toggle="modal" data-bs-target="#kentangModal">
+                <img src="/ASSETS/kentang.png" alt="kentang">
+                <h3>Kentang Goreng</h3>
+                <p>Kentang Krispi Nyam Nyam</p>
+                <p>RP 4.000</p>
+                <button class="add-btn" style="background-color: #e65c00;">Tambah</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for left -->
+    <div class="modal fade" id="saladModal" tabindex="-1" aria-labelledby="saladModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="saladLabel">Es Teh</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/ASSETS/salad.jpg" class="img-fluid">
+                    <h5>Salad Buah</h5>
+                    <p>Segar, manis, dan creamy! Salad buah spesial ini penuh potongan buah segar yang juicy, disiram
+                        saus yang lembut dan manisnya pas. Cocok banget buat yang mau ngemil sehat tapi tetap enak.
+                        Sekali coba, pasti pengen lagi!</p>
+                    <p>Harga: RP 8.000</p>
+                    <div class="quantity-controls">
+                        <button>-</button>
+                        <input type="text" value="1" readonly>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal For center-->
+
+    <div class="modal fade" id="gorenganModal" tabindex="-1" aria-labelledby="gorenganModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gorenganModalLabel">Es Campur</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/ASSETS/gorengan.png" alt="gorengan" class="img-fluid">
+                    <h5>Gorengan</h5>
+                    <p>Garing di luar, lembut di dalam! Gorengan pilihan ini digoreng sampai keemasan dengan rasa gurih yang bikin susah berhenti ngunyah. Mau bakwan, tahu isi, sampai pisang goreng, semua siap nemenin waktu santaimu. Nyesel kalau cuma beli satu!</p>
+                    <p>Harga: RP 1.000</p>
+                    <div class="quantity-controls">
+                        <button>-</button>
+                        <input type="text" value="1" readonly>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for right -->
+    <div class="modal fade" id="kentangModal" tabindex="-1" aria-labelledby="kentangModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="kentangModalLabel">Es Jeruk</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/ASSETS/kentang.png"  class="img-fluid">
+                    <h5>Kentang Goreng</h5>
+                    <p>Renyes, gurih, dan bikin ketagihan! Kentang goreng spesial ini digoreng sempurna, renyah di luar, lembut di dalam, dengan taburan bumbu rahasia yang mantul. Paling pas buat teman ngobrol atau ngemil sambil santai!</p>
+                    <p>Harga: RP 6.000</p>
+                    <div class="quantity-controls">
+                        <button>-</button>
+                        <input type="text" value="1" readonly>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                    <button class="btn btn-primary" style="background-color: #e65c00;">Tambah ke Keranjang</button>
+                </div>
             </div>
         </div>
     </div>
